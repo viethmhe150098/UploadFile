@@ -249,6 +249,7 @@
     <target depends="init" name="-init-cos" unless="deploy.on.save">
         <condition property="deploy.on.save" value="true">
             <or>
+                   
                 <istrue value="${j2ee.deploy.on.save}"/>
                 <istrue value="${j2ee.compile.on.save}"/>
             </or>
